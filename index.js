@@ -1,4 +1,5 @@
 const botconfig = require("./botconfig.json");
+const tokenfile = require("./token.json");
 const Discord = require("discord.js");
 const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
@@ -25,8 +26,6 @@ bot.on("ready", async () => {
   bot.user.setActivity("The Staff", {type: "Helping"});
 
 });
-
-worker: node index.js
 
 bot.on("message", async message => {
   if(message.author.bot) return;
