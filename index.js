@@ -27,7 +27,7 @@ bot.on("ready", async () => {
 
 });
 
-worker: node bot.js
+worker: node index.js
 
 bot.on("message", async message => {
   if(message.author.bot) return;
