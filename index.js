@@ -39,6 +39,7 @@ bot.on("message", async message => {
 
   clientDiscord.on('messeageReactionAdd', (reaction , user)=> {
   if(reaction.emoji.name) === '')
+  users.addRole(users.guild.find("Solo", setup.verify))
  
 });
 
